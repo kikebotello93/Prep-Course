@@ -9,12 +9,10 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if (x < y) {
-    return y;
-  } 
-  else ( x => y)
-  {
-    return x;
+  if (x > y){
+    return x
+  } else {
+    return y
   }
 }
 function mayoriaDeEdad(edad) {
@@ -51,13 +49,13 @@ function saludo(idioma) {
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
   if (idioma === 'aleman') {
-    return 'Guten Tag' + '!'
+    return 'Guten Tag!'
   } else if (idioma === 'mandarin') {
-    return 'Ni Hao' + '!'
+    return 'Ni Hao!'
   } else if (idioma === 'ingles') {
-    return 'Hello' + '!'
+    return 'Hello!'
   } else {
-    return 'Hola' + '!'
+    return 'Hola!'
   }
 }
 
@@ -120,7 +118,11 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  return numero % 1 === 0;
+  if (numero == Math.floor(numero)){
+    return true
+  } else{
+    return false
+  }
 }
 
 function fizzBuzz(numero) {
@@ -160,7 +162,7 @@ function operadoresLogicos(num1, num2, num3) {
     return false;
   }
 }
-
+ 
 function esPrimo(numero) {
   // Devuelve "true" si "numero" es primo
   // De lo contrario devuelve "falso"
@@ -194,7 +196,7 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
   let arrayTablaDel6 = []
-  for (let i = 0; i < 11; i++) {
+  for (let i = 0; i <= 10; i++) {
         arrayTablaDel6.push(6 * i)
   }
   return arrayTablaDel6
